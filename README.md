@@ -6,4 +6,5 @@ If the user presses _No_, the position of the button changes.
 However, if the _Yes_ button is pressed, the program ends.
 
 ##Demo
+
 To see the demonstration, click this [**link**](https://youtu.be/U75lMoohPCs).
