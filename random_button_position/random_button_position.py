@@ -10,8 +10,17 @@ def yes():
     quit()
 
 def no():
-    new_x = random.randint(0,100)
-    new_y = random.randint(0,100)
+    new_x = random.randint(50,150)
+    new_y = random.randint(50,150)
+    
+
+    #Check for overlap with the Yes button
+    while (yes_button.winfo_x() < new_x < yes_button.winfo_x() + yes_button.winfo_width()
+           and yes_button.winfo_y() < new_x < yes_button.winfo_y() + yes_button.winfo_height()):
+        
+        new_x = random.randint(50,150)
+        new_y = random.randint(50,150)
+    
     no_button.place(x=new_x,y=new_y)
 
 text = tk.Label(WINDOW, text="Are you dvmp?", bg = "pink", fg="white",font="impact").pack()
